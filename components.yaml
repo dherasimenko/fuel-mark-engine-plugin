@@ -8,5 +8,5 @@
   compatible: []
   requires: []
   incompatible: []
-  label: "Plugin label, that will be shown on UI"
-  description: "Component description (optional)"
+  label: "MarK Engine"
+  description: "MarK Engine provides ability to deploy OpenStack with help of Fuel orcestration but in MK24 way, which means with SaltStack Master node and full support of its Life cycle management features"

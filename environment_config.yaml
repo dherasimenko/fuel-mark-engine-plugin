@@ -3,9 +3,24 @@ attributes:
     # Settings group can be one of "general", "security", "compute", "network",
     # "storage", "logging", "openstack_services" and "other".
     group: 'other'
-  fuel-mark-engine-plugin_text:
-    value: 'Set default value'
-    label: 'Text field'
-    description: 'Description for text field'
-    weight: 25
-    type: "text"
+#  fuel-mark-engine-plugin_text:
+#    value: 'Set default value'
+#    label: 'Text field'
+#    description: 'Description for text field'
+#    weight: 25
+#    type: "text"
+
+# Select OpenStack version
+  fuel-mark0engine-plugin_select-os-version:
+    type: "select"
+    weight: 20
+    value: "Mitaka"
+    label: "OpenStack Version"
+    description: "Choose required OpenStack release"
+    values:
+      - data: "mitaka"
+        label: "Mitaka"
+      - data: "liberty"
+        label: "Liberty"
+      - data: "newton"
+        label: "Newton (not available)"

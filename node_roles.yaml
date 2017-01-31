@@ -1,8 +1,8 @@
-fuel-mark-engine-plugin_role:
+fuel-mark-engine-plugin_controller-role:
   # Role name
-  name: "mark-controller"
+  name: "MarK Controller"
   # Role description
-  description: "Write description for your role"
+  description: "OpenStack controller node deployed with help of MK24"
   # If primary then during orchestration this role will be
   # separated into primary-role and role
   has_primary: false
@@ -10,11 +10,12 @@ fuel-mark-engine-plugin_role:
   public_ip_required: false
   # Weight that will be used to sort out the
   # roles on the Fuel web UI
-  weight: 1000
+  weight: 10
+fuel-mark-engine-plugin_compute-role:
   # Role name
-  name: "mark-compute"
+  name: "MarK Compute"
   # Role description
-  description: "Write description for your role"
+  description: "OpenStack compute node deployed with help of MK24"
   # If primary then during orchestration this role will be
   # separated into primary-role and role
   has_primary: false
@@ -22,4 +23,17 @@ fuel-mark-engine-plugin_role:
   public_ip_required: false
   # Weight that will be used to sort out the
   # roles on the Fuel web UI
-  weight: 1000
+  weight: 10
+fuel-mark-engine-plugin_config-role:
+  # Role name
+  name: "MarK Config"
+  # Role description
+  description: "SaltStack master node"
+  # If primary then during orchestration this role will be
+  # separated into primary-role and role
+  has_primary: false
+  # Assign public IP to node if true
+  public_ip_required: false
+  # Weight that will be used to sort out the
+  # roles on the Fuel web UI
+  weight: 10

@@ -1,4 +1,4 @@
-fuel-mark-engine-plugin
+MK24F Plugin
 ============
 
 Plugin description
