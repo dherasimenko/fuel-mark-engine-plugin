@@ -1,4 +1,4 @@
-fuel-mark-engine-plugin_controller-role:
+mk-ctl:
   # Role name
   name: "MarK Controller"
   # Role description
@@ -11,7 +11,7 @@ fuel-mark-engine-plugin_controller-role:
   # Weight that will be used to sort out the
   # roles on the Fuel web UI
   weight: 10
-fuel-mark-engine-plugin_compute-role:
+mk-cmp:
   # Role name
   name: "MarK Compute"
   # Role description
@@ -24,7 +24,7 @@ fuel-mark-engine-plugin_compute-role:
   # Weight that will be used to sort out the
   # roles on the Fuel web UI
   weight: 10
-fuel-mark-engine-plugin_config-role:
+mk-cfg:
   # Role name
   name: "MarK Config"
   # Role description

@@ -3,18 +3,46 @@ attributes:
     # Settings group can be one of "general", "security", "compute", "network",
     # "storage", "logging", "openstack_services" and "other".
     group: 'other'
-#  fuel-mark-engine-plugin_text:
-#    value: 'Set default value'
-#    label: 'Text field'
-#    description: 'Description for text field'
-#    weight: 25
-#    type: "text"
 
-# Select OpenStack version
-  fuel-mark0engine-plugin_select-os-version:
+# Select MK cluster type
+  fuel-mark-engine-plugin_select-mk-cluster:
     type: "select"
     weight: 20
-    value: "Mitaka"
+    value: "-- choose --"
+    label: "MarK Cluster Type"
+    description: "Choose desired cluster type"
+    values:
+      - data: "mitaka"
+        label: "Mk.20 basic testing lab"
+      - data: "mitaka"
+        label: "Mk.20 advanced testing lab"
+      - data: "mitaka"
+        label: "Mk.20 expert testing lab"
+      - data: "mitaka"
+        label: "Mk.20 basic StackLight lab"
+      - data: "mitaka"
+        label: "Mk.20 advanced StackLight lab"
+      - data: "mitaka"
+        label: "Mk.22 basic testing lab"
+      - data: "mitaka"
+        label: "Mk.22 advanced testing lab"
+      - data: "mitaka"
+        label: "Mk.22 full scale lab"
+      - data: "mitaka"
+        label: "Mk.24 ovs dvr vlan stacklight"
+
+  fuel-mark-engine-plugin_cluster-domain-text:
+    value: 'mk24f.cluster'
+    label: 'Cluster domain name'
+    description: ''
+    weight: 25
+    type: "text"
+
+# Select OpenStack version
+  fuel-mark-engine-plugin_select-os-version:
+    type: "select"
+    weight: 20
+    value: "-- choose --"
     label: "OpenStack Version"
     description: "Choose required OpenStack release"
     values:
